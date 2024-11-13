@@ -1,0 +1,1 @@
+Name: John, Age: 23, Salary: 50000.00

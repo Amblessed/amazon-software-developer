@@ -1,0 +1,1 @@
+Employee(name=John, age=23, salary=50000.0)
