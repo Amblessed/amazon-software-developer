@@ -1,4 +1,4 @@
-package programming_with_java.interfaces.lab;
+package b_programming_with_java.interfaces.lab;
 
 
 

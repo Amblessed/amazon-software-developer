@@ -1,4 +1,4 @@
-package d_database_management_sql;
+package d_database_management_sql.basics;
 
 
 
@@ -20,7 +20,7 @@ public class DatabaseConnection {
         // Connection details for the Chinook MySQL database
         String url = "jdbc:mysql://localhost:33061/db_restaurant";
         String user = "root";
-        String password = "WSLmysql##++24";
+        String password = System.getenv("MYSQL_WSL_PASSWORD");
         try (Connection connection = DriverManager.getConnection(url, user, password)) {
             // Check if the connection was successful
             if (connection != null) {
@@ -29,7 +29,6 @@ public class DatabaseConnection {
                 // Execute the query to fetch artist names
                 ResultSet rs = stmt.executeQuery("SELECT * FROM tbl_menu_items LIMIT 5");
                 ResultSetMetaData rsmd = rs.getMetaData();
-                System.out.println(rsmd.getColumnCount());
 
                 ArrayList<String> columnNames = new ArrayList<>();
                 ArrayList<Integer> columnNamesLength = new ArrayList<>();
@@ -70,11 +69,15 @@ public class DatabaseConnection {
                     System.out.println("category: " + category);
                     System.out.println("price: " + price);
                 }
+                rs.close();
+                stmt.close();
             }
 
         } catch (SQLException e) {
             // Handle SQL errors during connection
             System.out.println("Connection failed: " + e.getMessage());
+        }finally {
+
         }
     }
 }

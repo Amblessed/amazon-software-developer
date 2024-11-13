@@ -1,0 +1,4 @@
+How to be a Software Developer
+1. Learn New Things
+2. Apply what you have learnt in a program
+3. Repeat step 1 and step 2

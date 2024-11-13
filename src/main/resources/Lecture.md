@@ -1,4 +1,4 @@
-A database is a structured collection of data that supports electronic storage and manipulation
+STA database is a structured collection of data that supports electronic storage and manipulation
 
 **Relational Databases**  
 Organize data into structured tables with predefined schemas, where relationships between tables are defined using foreign keys

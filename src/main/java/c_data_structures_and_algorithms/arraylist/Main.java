@@ -1,4 +1,4 @@
-package data_structures_and_algorithms.arraylist;
+package c_data_structures_and_algorithms.arraylist;
 
 
 
@@ -9,7 +9,7 @@ package data_structures_and_algorithms.arraylist;
  */
 
 
-import data_structures_and_algorithms.arraylist.controller.SeatBooking;
+import c_data_structures_and_algorithms.arraylist.controller.SeatBooking;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

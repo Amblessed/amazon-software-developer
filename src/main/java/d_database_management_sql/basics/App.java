@@ -1,4 +1,4 @@
-package d_database_management_sql;
+package d_database_management_sql.basics;
 
 
 
@@ -19,6 +19,17 @@ public class App {
         Enumeration<Driver> drivers = DriverManager.getDrivers();
         while (drivers.hasMoreElements()) {
             System.out.println(drivers.nextElement().getClass().getName());
+        }
+
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Enumeration<Driver> classDrivers = DriverManager.getDrivers();
+            while (classDrivers.hasMoreElements()) {
+                System.out.println(classDrivers.nextElement().getClass().getName());
+            }
+        } catch (ClassNotFoundException e) {
+            System.out.println("Driver Class not found");
         }
     }
 }

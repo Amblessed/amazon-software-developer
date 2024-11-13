@@ -1,4 +1,4 @@
-package data_structures_and_algorithms.linkedlist.single;
+package c_data_structures_and_algorithms.linkedlist.single;
 
 
 

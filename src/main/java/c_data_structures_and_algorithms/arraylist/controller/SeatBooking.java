@@ -1,4 +1,4 @@
-package data_structures_and_algorithms.arraylist.controller;
+package c_data_structures_and_algorithms.arraylist.controller;
 
 
 
@@ -9,7 +9,7 @@ package data_structures_and_algorithms.arraylist.controller;
  */
 
 
-import data_structures_and_algorithms.arraylist.model.Seat;
+import c_data_structures_and_algorithms.arraylist.model.Seat;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
